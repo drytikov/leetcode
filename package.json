@@ -1,0 +1,40 @@
+{
+  "name": "leetcode",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": {
+    "index": "dist/index.js"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "test": "jest",
+    "babel-node": "babel-node",
+    "eslint": "eslint"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drytikov/leetcode.git"
+  },
+  "author": "drytikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drytikov/leetcode/issues"
+  },
+  "homepage": "https://github.com/drytikov/leetcode#readme",
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-env": "*",
+    "babel-preset-stage-0": "*",
+    "babel-eslint": "*",
+    "eslint": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-import": "*",
+    "jest": "^21.2.1"
+  }
+}
